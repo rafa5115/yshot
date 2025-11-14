@@ -18,7 +18,7 @@ def download_youtube_video(url):
             "ffmpeg_location": FFMPEG_PATH,    # ffmpeg oficial do Linux
             "quiet": True,
             "noprogress": True,
-            "cookiesfrombrowser": ("chrome",)
+            "cookiefile": "cookies.txt"
         }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
