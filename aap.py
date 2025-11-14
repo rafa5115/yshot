@@ -17,7 +17,8 @@ def download_youtube_video(url):
             "merge_output_format": "mp4",
             "ffmpeg_location": FFMPEG_PATH,    # ffmpeg oficial do Linux
             "quiet": True,
-            "noprogress": True
+            "noprogress": True,
+            "cookiesfrombrowser": ("chrome",)
         }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
